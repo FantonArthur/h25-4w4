@@ -1,0 +1,26 @@
+/* /////////////////////// */
+/*
+Theme Name: 4W4 - Arthur Fanton
+Theme URI: https://referenced.ca/
+Author: Arthur Fanton
+Author URI: https://github.com/FantonArthur
+Description: Thème de base développé dans le cadre du cours 4w4
+Version: 1.0
+Tested up to: 6.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4W4-Arthur
+*/
+
+/* ///////////////////////
+Les Variables 
+/////////////////////// */
+@import "variables/couleurs";
+
+/* ///////////////////////
+Les composants 
+/////////////////////// */
+@import "composants/menu";
+@import "composants/carte";
+
