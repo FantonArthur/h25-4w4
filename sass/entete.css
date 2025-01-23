@@ -1,0 +1,8 @@
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete__nav {
+  display: flex;
+}/*# sourceMappingURL=entete.css.map */
