@@ -9,7 +9,20 @@
     flex-direction: row;
     @media screen and (max-width: $point__rupture) {
       flex-direction: column;
+      height: 40vh;
+      width: 100vw;
+      padding-bottom: 20px;
+      gap: 30px 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff;
     }
     gap: 0 10px;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
   }
 }
