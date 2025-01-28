@@ -17,10 +17,19 @@ Text Domain: 4W4-Arthur
 Les Variables 
 /////////////////////// */
 @import "variables/couleurs";
+@import "variables/dimensions";
 
 /* ///////////////////////
 Les composants 
 /////////////////////// */
 @import "composants/menu";
 @import "composants/carte";
+@import "composants/recherche";
+
+/* ///////////////////////
+Layout 
+/////////////////////// */
+@import "layout/principal";
+@import "layout/entete.scss";
+
 

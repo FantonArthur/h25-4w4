@@ -1,0 +1,15 @@
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @media screen and (max-width: $point__rupture) {
+      flex-direction: column;
+    }
+    gap: 0 10px;
+  }
+}
