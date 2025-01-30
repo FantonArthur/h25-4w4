@@ -1,28 +1,18 @@
-.entete {
+.entete{
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    @media screen and (max-width: $point__rupture) {
-      flex-direction: column;
-      height: 40vh;
-      width: 100vw;
-      padding-bottom: 20px;
-      gap: 30px 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #fff;
-    }
-    gap: 0 10px;
-  }
+      display: flex;
+      @media screen and (max-width:$point__rupture) {
+          flex-direction: column; 
+      }
+      flex-direction: row; 
+      align-items: center;
+      gap: 0 40px;
+      flex-wrap: wrap;
 
-  &__logo {
-    width: 5rem;
-    height: 5rem;
   }
 }
+

@@ -1,17 +1,22 @@
+<?php 
+  /**
+   * Modèle de base de notre thème
+   */
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4W4-Voyage</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
         <div class="entete">
             <figure class="entete__logo">
-                <img src="images/Arrière-plan logo supprimé.png" alt="logo voyage" width="100" height="100">
+                <img src="/4w4-wordpress/wp-content/themes/tp1/images/Arrière-plan logo supprimé.png" alt="logo voyage" width="100" height="100">
             </figure>
             <div class="entete__nav">
                 <nav class="entete__menu">
