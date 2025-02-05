@@ -19,7 +19,8 @@ Les Variables
 /* ///////////////////////
 Les composants 
 /////////////////////// */
-.menu {
+/* /////////////////////////////////////////// menu principal */
+.menu, .menu__items {
   flex: 1 1 50%;
   display: flex;
   flex-direction: row;
@@ -29,19 +30,56 @@ Les composants
   list-style-type: none;
 }
 @media screen and (max-width: 700px) {
-  .menu {
-    flex-direction: column;
+  .menu__items, .menu__items__items {
+    display: none;
   }
 }
-.menu__a {
+.menu__li, .menu__items__li {
+  list-style-type: none;
+}
+.menu__ul, .menu__items__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 700px) {
+  .menu__ul, .menu__items__ul {
+    display: block;
+  }
+}
+.menu__a, .menu__items__a {
   color: #333;
   text-decoration: none;
   padding: 2px 5px;
 }
+.menu__burger, .menu__items__burger {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .menu__burger, .menu__items__burger {
+    display: block;
+    flex: 0 0 30px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+}
+.menu__checkbox, .menu__items__checkbox {
+  display: none;
+}
+.menu__checkbox:checked ~ .menu__items, .menu__items__checkbox:checked ~ .menu__items {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 40%;
+  gap: 0;
+  z-index: 100;
+}
 
-/* //////////////
+/* *******************
 Le composant .carte
-////////////// */
+********************** */
 .carte {
   border: 1px solid #ddd;
   padding: 20px;
@@ -49,6 +87,9 @@ Le composant .carte
 }
 .carte--grande {
   padding: 40px;
+}
+.carte--petite {
+  padding: 20px;
 }
 .carte__image img {
   max-width: 100%;
@@ -81,20 +122,72 @@ Le composant .carte
 }
 
 .recherche {
-  border: solid 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input {
-  padding: 0;
+  flex: 1;
+  height: 1.8rem;
   border: none;
-  border-right: 1px dotted rgba(0, 0, 0, 0.1);
   outline: none;
   background-color: rgba(0, 0, 0, 0.02);
+  border-right: 1px dotted rgba(0, 0, 0, 0.2);
 }
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
 .recherche__img {
-  padding: 0 2px;
+  flex: 0 0 20px;
+  padding: 0 3px;
+}
+@media screen and (max-width: 700px) {
+  .recherche {
+    display: none;
+  }
+}
+.recherche .enu__checkbox:checked ~ .recherche__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.inscription {
+  margin: 0;
+  padding: 0;
+}
+.inscription p, .inscription input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.inscription input, .inscription button {
+  border: 2px solid rgb(0, 195, 255);
+}
+.inscription #inscription__infos {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.promotion h1 {
+  margin: 2%;
+}
+.promotion .images__promotions {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5px;
+  margin: 2%;
+  padding: 10px 0;
+}
+.promotion .images__promotions img {
+  height: auto;
+  object-fit: cover;
 }
 
 /* ///////////////////////
@@ -117,12 +210,25 @@ Layout
 }
 .entete__nav {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  gap: 0 10px;
+  align-items: center;
+  gap: 0 40px;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 700px) {
-  .entete__nav {
-    flex-direction: column;
-  }
+
+/* ///////////////////////
+Bases
+/////////////////////// */
+a {
+  color: #5a5;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.1);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
+}
+a:focus {
+  color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */

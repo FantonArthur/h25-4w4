@@ -1,0 +1,15 @@
+.entete{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      gap: 0 40px;
+      flex-wrap: wrap;
+
+  }
+}
+
