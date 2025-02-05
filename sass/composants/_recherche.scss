@@ -19,4 +19,13 @@
     padding : 0 3px;
    
   }
+
+  @media screen and (max-width:$point__rupture) {
+    display: none;
+  }
+    .enu__checkbox:checked ~ .recherche__input {
+      display: flex;
+      flex-direction: column;
+    }
+  
 }

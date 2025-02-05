@@ -1,0 +1,44 @@
+.inscription {
+margin: 0;
+padding: 0;
+
+p, input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+input, button {
+  border: 2px solid rgb(0, 195, 255);
+}
+
+#inscription__infos {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+  }
+}
+
+.promotion{
+  h1{
+      margin: 2%;
+  }
+
+  .images__promotions {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      grid-template-rows: repeat(2, auto); 
+      gap: 5px; 
+      margin: 2%;
+      padding: 10px 0 ;
+  }
+
+  .images__promotions img {
+      height: auto;
+      object-fit: cover; 
+  }
+}

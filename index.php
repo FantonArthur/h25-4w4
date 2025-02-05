@@ -20,29 +20,35 @@
             </figure>
             <div class="entete__nav">
                 <nav class="entete__menu">
-                    <ul class="menu">
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                    </ul>
+                <div class="menu">
+                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+                    <label for="menu-toggle" class="menu__burger">☰</label>
+                    <nav class="menu__items">
+                        <ul class="menu__ul">
+                            <li class="menu__li">
+                                <a class="menu__a" href="#">Aventure</a>
+                            </li>
+                            <li class="menu__li">
+                                <a class="menu__a" href="#">Sportive</a>
+                            </li>
+                            <li class="menu__li">
+                                <a class="menu__a"  href="#">Culturelle</a>
+                            </li>
+                            <li class="menu__li">
+                                <a  class="menu__a" href="#">Zen</a>
+                            </li>
+                            <li class="menu__li">
+                                <a class="menu__a" href="#">Économique</a>
+                            </li>
+                            <li class="menu__li">
+                                <a class="menu__a"  href="#">Pleine nature</a>
+                            </li>
+                            <li class="menu__li">
+                                <a  class="menu__a" href="#">Croisière</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 </nav>
                 <div class="entete__recherche">
                     <form  class="recherche">
@@ -56,7 +62,7 @@
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                Club de voyage
+            Voyagez Autrement avec Mondo Voyages !
             </h1>
             <p class="hero__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
@@ -75,23 +81,47 @@
             </div>
         </div>
     </section>
-    <section class="galerie">
-        <figure class="galerie__fig">
-            <img src="" alt="">
-        </figure>
-    </section>
- 
-    <section class="promotion">
-        <div class="carte carte--grande">
-            <figure class="carte__image">
-                <img src="images/images-2.jpeg" alt="Image de voyage">
-            </figure>
-            <div class="carte__contenu">
-                <h2 class="carte__titre">Destination de rêve</h2>
-                <p class="carte__description">Découvrez des endroits magnifiques à travers le monde.</p>
-                <button class="carte__bouton carte__bouton--actif">Réserver</button>
-            </div>
+    <section class="inscription">
+    <div id="inscription__infos">
+        <div class="nom">
+            <p class="inscription__titre">NOM</p>
+            <input type="text" id="nom" placeholder="Écrivez votre nom">
+        </div>
+        <div class="prenom">
+            <p class="inscription__titre">PRENOM</p>
+            <input type="text" id="prenom" placeholder="Écrivez votre prénom">
+        </div>
+        <div class="courriel">
+            <p class="inscription__titre">COURRIEL</p>
+            <input type="text" id="courriel" placeholder="Écrivez votre courriel">
+        </div>
+        <div class="telephone">
+            <p class="inscription__titre">TELEPHONE</p>
+            <input type="text" id="telephone" placeholder="Écrivez votre téléphone">
+        </div>
+    
+            
+            <button class="inscription__bouton">S'INSCRIRE</button>
         </div>
     </section>
+
+    <section class="promotion">
+        <h1 class="promotion__titre">Nos destinations favorites</h1>
+
+        <div class="images__promotions">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/6.jpeg"   alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/7.jpeg"   alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/8.jpeg"   alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/9.jpeg"  alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/10.jpeg"  alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/11.jpeg"  alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/12.jpeg"   alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/13.jpeg"  alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/14.jpeg"   alt="">
+            <img src="/4w4-wordpress/wp-content/themes/tp1/images/15.jpeg" alt="">
+        </div>
+    </section>
+
+
 </body>
 </html>
