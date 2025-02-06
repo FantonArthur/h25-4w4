@@ -5,6 +5,7 @@
 ?>
 
 <?php get_header(); ?>
+    <h1>Front-page</h1>
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
