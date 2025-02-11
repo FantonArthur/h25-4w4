@@ -13,11 +13,14 @@
                 <img src="<?php echo get_template_directory_uri() . '/images/Arrière-plan logo supprimé.png' ?>" alt="logo voyage" width="100" height="100">
             </figure>
             <div class="entete__nav">
+            <input type="checkbox" id="menu-toggle" class="menu__checkbox">
+            <label for="menu-toggle" class="menu__burger">☰</label>
+                    <?php wp_nav_menu(array(
+                        'menu' => 'Principal',
+                        'container' => 'div',
+                        'container_class' => 'entete__menu',
+                    )); ?>
                 <nav class="entete__menu">
-                <div class="menu">
-                    <input type="checkbox" id="menu-toggle" class="menu__checkbox">
-                    <label for="menu-toggle" class="menu__burger">☰</label>
-                    <nav class="menu__items">
                         <ul class="menu__ul">
                             <li class="menu__li">
                                 <a class="menu__a" href="#">Aventure</a>
@@ -41,8 +44,6 @@
                                 <a  class="menu__a" href="#">Croisière</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
                 </nav>
                 <div class="entete__recherche">
                     <form  class="recherche">

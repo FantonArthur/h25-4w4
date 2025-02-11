@@ -3,6 +3,14 @@
    * Les functions de notre thème
    */
 
+
+   function mon_theme_supports() {
+    add_theme_support('title-tag');
+    add_theme_support('menus');
+}
+add_action( 'after_setup_theme', 'mon_theme_supports' );
+
+
 function ajouter_css_header() {
 
   wp_enqueue_style(

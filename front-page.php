@@ -9,10 +9,10 @@
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-            Voyagez Autrement avec Mondo Voyages !
+                <?php bloginfo('name'); ?>
             </h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
+                <?php bloginfo('Description'); ?>
             </p>
             <a href="" class="hero__courriel">
                 info@cmaisonneuve.qc.ca
