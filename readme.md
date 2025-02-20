@@ -4,4 +4,4 @@
 ## Auteur : Arthur Fanton
 Créer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de maquette.
  
-### Github-page: 
+### Github-page: https://fantonarthur.github.io/h25-4w4/ 
