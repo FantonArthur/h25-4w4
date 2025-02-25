@@ -10,7 +10,7 @@
     <header>
         <div class="entete">
             <figure class="entete__logo">
-            <img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="logo voyage">
+            <img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="logo voyage">;
 
             </figure>
 
