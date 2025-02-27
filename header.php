@@ -15,7 +15,7 @@
                 
                 <img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="logo voyage">
             </figure>
-            <label for="chk__burger" class="burger">
+            <label for="chk__burger" class="chk__burger">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32" height="32">
             </label>
             <input type="checkbox" id="chk__burger" class="chk__burger">

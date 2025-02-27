@@ -1,3 +1,6 @@
+// Assurez-vous que cette variable est définie quelque part dans votre SCSS
+$point__rupture: 700px;
+
 .chk__burger {
     display: none;
 }
@@ -11,8 +14,12 @@
     cursor: pointer;
 }
 
+#chk__burger {
+    display: none;
+}
+
 @media screen and (max-width: $point__rupture) {
-    .chk__burger + label {
+    .chk__burger  {
         display: block;
     }
 }
@@ -32,27 +39,24 @@
 .menu__a {
     font-size: 22px;
     font-weight: bold;
-  
 }
 
-
-
-
-
-.entete{
+.entete {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        flex-direction: row;
+        gap: 0 40px;
+        flex-wrap: wrap;
 
-        @media screen and (max-width:$point__rupture) {
+        @media screen and (max-width: $point__rupture) {
             display: none;
-            flex-direction: column; 
+            flex-direction: column;
             height: 40vh;
             width: 100vw;
             padding-bottom: 20px;
@@ -62,12 +66,7 @@
             right: 0;
             background-color: white;
         }
-        flex-direction: row; 
-        gap: 0 40px;
-        flex-wrap: wrap; 
-
     }
-    
 }
 
 

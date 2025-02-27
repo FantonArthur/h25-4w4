@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 - Constantin Schmouker
+Theme Name: 4W4 -  Arthur Fanton
 Theme URI: https://referenced.ca
-Author: Constantin Schmouker
+Author:  Arthur Fanton
 Author URI: 
 Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
@@ -10,7 +10,7 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-constant
+Text Domain: 4w4-arthur
 */
 /* /////////////////////
 Les Variables
@@ -41,6 +41,7 @@ Les composants
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 0px 6px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -48,6 +49,7 @@ Les composants
 @media screen and (max-width: 700px) {
   .menu {
     flex-direction: column;
+    gap: 6px 0px;
   }
 }
 .menu__a {
@@ -61,6 +63,7 @@ Le composant .carte
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
+  flex: 1 1 220px;
 }
 .carte--grande {
   padding: 40px;
@@ -127,6 +130,12 @@ Layout
   margin: 5%;
   padding: 0;
   box-sizing: border-box;
+}
+
+.boiteflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .hero {
@@ -207,8 +216,12 @@ Layout
   cursor: pointer;
 }
 
+#chk__burger {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
-  .chk__burger + label {
+  .chk__burger {
     display: block;
   }
 }
