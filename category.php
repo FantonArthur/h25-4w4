@@ -1,18 +1,17 @@
-<?php
-/**
- *  index.php est le modèle par défaut
- *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
- */
-?>
 <?php get_header() ?>
+
 <h1>category.php</h1>
-    <section class="populaire">
+
+<section class="populaire">
         <div class="boiteflex global">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (in_category('galerie')){
+                the_content();
+            } else { ?>
             <?php get_template_part("gabarit/carte"); ?>
+            <?php } ?>
             <?php endwhile; endif; ?>
         </div>
     </section>
-    <?php get_footer(); ?>
-</body>
-</html>
+
+  <?php get_footer(); ?>

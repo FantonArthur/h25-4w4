@@ -12,8 +12,11 @@
     <header>
         <div class="entete">
             <figure class="entete__logo">
-                
-                <img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="logo voyage">
+            <?php
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            }
+            ?>
             </figure>
             <label for="chk__burger" class="chk__burger">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32" height="32">
@@ -26,10 +29,7 @@
                             'container_class' => 'entete__menu',
                 )); ?>
                 <div class="entete__recherche">
-                    <form  class="recherche">
-                        <input type="text" class="recherche__input">
-                        <img  class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
-                    </form>
+                    <?php get_search_form(); ?>
                 </div>
             </div>
         </div>

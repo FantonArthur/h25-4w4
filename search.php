@@ -7,20 +7,18 @@
 <?php
 get_header();
 ?>
-<main class="site__main">
-
-<section class="recherche__section">
+<section class="populaire">
    <?php
    if (have_posts()):
       while(have_posts()): the_post(); ?>
-      <article>
-         <h5><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5>
-         <?php echo wp_trim_words(get_the_excerpt(), 60) ?>
-         <hr>
+      <article  class="populaire__article">
+         <h2 class="populaire__article"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
+         <div class="populaire__contenu"><?php echo wp_trim_words(get_the_excerpt(), 60, "...") ?></div>
       </article>
       <?php endwhile; ?>
    <?php endif; ?>
 </section>
-</main>
 <?php
-get_footer();
+get_footer();  ?> 
+</body>
+</html>

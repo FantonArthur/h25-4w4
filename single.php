@@ -1,7 +1,6 @@
 <?php
 /**
- *  index.php est le modèle par défaut
- *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
+ *  single.php est le modèle pour chaque article individuel
  */
 ?>
 <?php get_header() ?>
