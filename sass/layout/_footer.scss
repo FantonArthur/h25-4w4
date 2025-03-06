@@ -21,6 +21,15 @@ footer {
         width: 100%; // S'assurer que la boîte prend toute la largeur disponible
         margin: 0 auto; // Centrer la boîte horizontalement
 
+        &__compagnies {
+            display: flex;
+            flex-direction: column;
+            
+            .menu {
+                gap: 10px;
+            }
+        }
+
         &__externe {
             & .menu { //ul
                 display: flex;
@@ -34,6 +43,7 @@ footer {
                 margin-top: 20px;
             }
         }
+
 
         &__description {
             max-width: 200px; // Définir une largeur maximale pour le texte

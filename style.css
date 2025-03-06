@@ -284,6 +284,10 @@ Layout
     background-color: white;
   }
 }
+.entete .custom-logo {
+  max-width: 150px;
+  height: auto;
+}
 
 /*
   --------------------------------- Layout du pied de page
@@ -306,6 +310,13 @@ footer {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+.piedpage__s1__compagnies {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__compagnies .menu {
+  gap: 10px;
 }
 .piedpage__s1__externe .menu {
   display: flex;
