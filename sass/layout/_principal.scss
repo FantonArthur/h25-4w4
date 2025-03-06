@@ -10,6 +10,19 @@
     background-image: url("images/maldives.jpg");
     display: flex;
     flex-direction: column;
+
+    &__titre {
+        font-size: 5rem;
+        text-shadow: 3px -3px 3px rgb(255 188 15);
+        color: #f3d41c;
+    }
+    &__description {
+        font-size: 2rem;
+        color: #f3d41c;
+    }
+    &__icone-app {
+        margin-top: 5px;
+    }
     
     
     

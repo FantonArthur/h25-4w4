@@ -34,8 +34,6 @@
             <img src="" alt="">
         </figure>
     </section>
- 
-
     <section class="populaire">
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

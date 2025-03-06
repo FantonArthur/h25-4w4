@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 -  Arthur Fanton
+Theme Name: 4W4 - Constantin Schmouker
 Theme URI: https://referenced.ca
-Author:  Arthur Fanton
+Author: Constantin Schmouker
 Author URI: 
 Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
@@ -10,7 +10,7 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-arthur
+Text Domain: 4w4-constant
 */
 /* /////////////////////
 Les Variables
@@ -86,19 +86,22 @@ Le composant .carte
   font-size: 16px;
   color: #666;
 }
-.carte__bouton {
-  padding: 10px 20px;
-  background-color: #007bff;
+.carte__categories {
+  margin-top: 10px;
+}
+.carte .carte__bouton--categorie {
+  padding: 5px 10px;
+  background-color: #1d13cf;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
 }
-.carte__bouton--actif {
-  background-color: #0056b3;
-}
-.carte__bouton:hover {
-  background-color: #0056b3;
+.carte .carte__bouton--categorie:hover {
+  background-color: #1890d6;
 }
 
 .recherche {
@@ -143,6 +146,18 @@ Layout
   background-image: url("images/maldives.jpg");
   display: flex;
   flex-direction: column;
+}
+.hero__titre {
+  font-size: 5rem;
+  text-shadow: 3px -3px 3px rgb(255, 188, 15);
+  color: #f3d41c;
+}
+.hero__description {
+  font-size: 2rem;
+  color: #f3d41c;
+}
+.hero__icone-app {
+  margin-top: 5px;
 }
 .hero button {
   display: flex;
@@ -281,22 +296,25 @@ footer {
 .piedpage {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 .piedpage__s1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
-}
-.piedpage__s1__externe {
-  flex: 0 0 20%;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 .piedpage__s1__externe .menu {
   display: flex;
   flex-direction: column;
 }
-.piedpage__s1__adresse {
-  flex: 0 0 40%;
+.piedpage__s1__adresse__recherche {
+  margin-top: 20px;
 }
 .piedpage__s1__description {
-  flex: 1 0 400px;
+  max-width: 200px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
