@@ -1,4 +1,6 @@
 <footer>
+    <?php $footer_mission = get_theme_mod('footer_mission', 'Default Title'); ?>
+
     <div class="piedpage global">
         <section class="piedpage__s1">
             <div class="piedpage__s1__compagnies"> 
@@ -33,6 +35,7 @@
                             'container' => 'nav',
                             'container_class' => 'entete__menu',
                 )); ?>
+                <?php echo $footer_mission; ?>
                 </div>
         </section>
     </div>
