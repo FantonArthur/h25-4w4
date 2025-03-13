@@ -6,15 +6,16 @@ Le composant .carte
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  flex : 1 1 220px;
-  
+  flex: 1 1 220px;
 
   &--grande {
     padding: 40px;
   }
+
   &--petite {
     padding: 20px;
   }
+
   &__image img {
     max-width: 100%;
     border-radius: 8px;
@@ -53,4 +54,15 @@ Le composant .carte
   .carte__bouton--categorie:hover {
     background-color: #1890d6;
   }
+
+  &:nth-child(odd) {
+    background-color: peachpuff; /* Couleur pour les cartes impaires */
+    color: cornflowerblue;
+  }
+  
+  &:nth-child(even) {
+    background-color: cornflowerblue; /* Couleur pour les cartes paires */
+    color: peachpuff; /* Ajustement du texte si nécessaire */
+  }
+  
 }

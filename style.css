@@ -103,6 +103,14 @@ Le composant .carte
 .carte .carte__bouton--categorie:hover {
   background-color: #1890d6;
 }
+.carte:nth-child(odd) {
+  background-color: peachpuff; /* Couleur pour les cartes impaires */
+  color: cornflowerblue;
+}
+.carte:nth-child(even) {
+  background-color: cornflowerblue; /* Couleur pour les cartes paires */
+  color: peachpuff; /* Ajustement du texte si nécessaire */
+}
 
 .recherche {
   display: flex;
@@ -295,6 +303,7 @@ Layout
 footer {
   background-color: rgb(236, 136, 13);
   color: #000;
+  background-image: url("images/ciel.jpg");
 }
 
 .piedpage {
@@ -328,4 +337,8 @@ footer {
 .piedpage__s1__description {
   max-width: 200px;
   text-align: center;
+}
+.piedpage__s1__guide {
+  text-decoration: underline;
+  text-decoration-color: blanchedalmond;
 }/*# sourceMappingURL=style.css.map */

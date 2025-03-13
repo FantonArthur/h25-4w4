@@ -22,7 +22,7 @@
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=000" width="32" height="32">
             </label>
             <input type="checkbox" id="chk__burger" class="chk__burger">
-            <div class="entete__nav">
+            <div class="entete__nav" id="accueil">
                 <?php wp_nav_menu(array(
                             'menu' => 'principal',
                             'container' => 'nav',
