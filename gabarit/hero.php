@@ -1,6 +1,6 @@
 <?php $hero_bg = get_theme_mod('hero_background_image');
       $hero_auteur = get_theme_mod('hero_auteur', 'Arthur Fanton');
-      $hero_courriel = get_theme_mod('hero_courriel', '');
+      $hero_courriel = get_theme_mod('hero_courriel', 'info@cmaisonneuve.qc.ca');
       $couleur = get_theme_mod('hero_couleur', '#fff');
  ?>
 <style>
@@ -18,7 +18,7 @@
             <?php  bloginfo('description'); ?>
             </p>
             <a href="" class="hero__courriel hero_couleur">
-                <?= $hero_courriel; ?>
+                <p><?= $hero_courriel; ?></p>
             </a>
             <a class="hero__bouton" href="">Inscription</a>
             <?php get_template_part("gabarit/icone_sociaux"); ?>
