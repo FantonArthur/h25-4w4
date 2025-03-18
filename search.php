@@ -7,7 +7,6 @@
 <?php
 get_header();
 ?>
-<h1>search.php</h1>
 
 <section class="populaire">
 <h2 class="populaire__search">Résultats de recherche pour: <?php echo get_search_query(); ?></h2>

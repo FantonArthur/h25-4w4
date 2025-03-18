@@ -1,7 +1,5 @@
 <?php get_header() ?>
 
-<h1>category.php</h1>
-
 <section class="populaire">
         <h2 class="populaire__titre"><?php the_category(); ?></h2>
         <div class="boiteflex global">

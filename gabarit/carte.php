@@ -22,5 +22,6 @@
                     ?>
                     <p class="temp_min">Température minimum : <?php echo the_field('temperature_minimum'); ?> &#xB0;C</p>
                     <p class="temp_max">Température maximum : <?php echo the_field('temperature_maximum'); ?> &#xB0;C</p>
+                    <p class="temp_moy">Température moyenne : <?php echo the_field('temperature_moyenne'); ?> &#xB0;C</p>
                 </div>
             </article>

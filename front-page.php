@@ -6,7 +6,6 @@
 ?>
 
 <?php get_header() ?>
-<h1>front-page.php</h1>
     <?php get_template_part("gabarit/hero"); ?>
     <section class="galerie">
         <figure class="galerie__fig">
