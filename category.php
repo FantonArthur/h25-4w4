@@ -3,6 +3,7 @@
 <h1>category.php</h1>
 
 <section class="populaire">
+        <h2 class="populaire__titre"><?php the_category(); ?></h2>
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php if (in_category('galerie')){

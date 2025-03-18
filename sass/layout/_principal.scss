@@ -9,6 +9,22 @@ body {
 }
 .populaire {
     font-family: "Sour Gummy", sans-serif;
+    &__titre {
+        font-size: 4rem;
+        text-align: center;
+        li {
+            list-style-type: none;
+        }
+        a {
+            color: #f3d41c;
+            text-decoration: none;
+        }
+    }
+    &__search {
+        font-size: 3rem;
+        text-align: left;
+        color: #f3d41c;
+    }
 }
 .boiteflex {
     display: flex;
