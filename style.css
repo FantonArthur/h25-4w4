@@ -403,6 +403,25 @@ footer {
 .piedpage__s1__adresse__recherche {
   margin-top: 20px;
 }
+.piedpage__s1__adresse__recherche #s {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Sour Gummy", sans-serif;
+  color: peachpuff;
+  border: none;
+  outline: none;
+  margin-right: 3px;
+}
+.piedpage__s1__adresse__recherche #searchsubmit {
+  background-color: rgb(21, 97, 159);
+  font-family: "Sour Gummy", sans-serif;
+  color: peachpuff;
+  padding: 2px 0.6rem;
+  border: 1px solid;
+  border-color: peachpuff;
+  border-radius: 15%;
+  border-top: none;
+  border-bottom: none;
+}
 .piedpage__s1__description {
   max-width: 200px;
   text-align: center;

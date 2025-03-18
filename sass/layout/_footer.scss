@@ -59,6 +59,26 @@ footer {
             &__coord {}
             &__recherche {
                 margin-top: 20px;
+                #s {
+                    background-color: rgba(0,0,0,.1);
+                    font-family: "Sour Gummy", sans-serif;
+                    color: peachpuff;
+                    border: none;
+                    outline: none;
+                    margin-right: 3px;
+                }
+                #searchsubmit {
+                    background-color: rgb(21, 97, 159);
+                    font-family: "Sour Gummy", sans-serif;
+                    color: peachpuff;
+                    padding: 2px .6rem;
+                    border: 1px solid;
+                    border-color: peachpuff;
+                    border-radius: 15%;
+                    border-top: none;
+                    border-bottom: none;
+                }
+                
             }
         }
 
