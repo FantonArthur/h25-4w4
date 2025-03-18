@@ -1,7 +1,7 @@
 <?php $hero_bg = get_theme_mod('hero_background_image');
       $hero_auteur = get_theme_mod('hero_auteur', 'Arthur Fanton');
       $hero_courriel = get_theme_mod('hero_courriel', '');
-      $couleur = get_theme_mod('hero_icone', '#fff');
+      $couleur = get_theme_mod('hero_couleur', '#fff');
  ?>
 <style>
   .hero_couleur {
@@ -17,12 +17,10 @@
             <p class="hero__description">
             <?php  bloginfo('description'); ?>
             </p>
-            <a href="" class="hero__courriel">
+            <a href="" class="hero__courriel hero_couleur">
                 <?= $hero_courriel; ?>
             </a>
-            <button class="hero__bouton">
-                Inscription
-            </button>
+            <a class="hero__bouton" href="">Inscription</a>
             <?php get_template_part("gabarit/icone_sociaux"); ?>
             <p class="hero__auteur hero_couleur">
                 Auteur: <?php echo $hero_auteur; ?>

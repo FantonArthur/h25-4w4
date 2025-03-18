@@ -3,9 +3,7 @@
 */
 
 footer {
-    background-color: rgb(236, 136, 13); //Doit devenir une variable de couleur
-    color: #000;
-    background-image: url("images/ciel.jpg");
+    color: peachpuff;
 
 }
 
@@ -13,8 +11,24 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; // Centrer le contenu horizontalement
-    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    padding: 2.1rem 1rem;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15%;
+    background-color: rgb(21, 97, 159);
     
+
+    &__courriel, &__adresse {
+            color: peachpuff;
+        }
+        a {
+            color: peachpuff;
+            transition: color 0.3s ease; // Transition fluide de la couleur du texte
+        }
+        a:hover {
+            color: rgba(0,0,0,0.3);
+        }
 
     &__s1 {
         display: flex;
@@ -27,6 +41,7 @@ footer {
         &__compagnies {
             display: flex;
             flex-direction: column;
+            
             
             .menu {
                 gap: 10px;
@@ -47,7 +62,6 @@ footer {
             }
         }
 
-
         &__description {
             max-width: 200px; // Définir une largeur maximale pour le texte
             text-align: center; // Centrer le texte
@@ -57,5 +71,9 @@ footer {
             text-decoration: underline;
             text-decoration-color: blanchedalmond;
         }
+    }
+    &__h2 {
+        font-family: "Sour Gummy", sans-serif;
+        color: #f3d41c;
     }
 }

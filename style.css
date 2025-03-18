@@ -25,9 +25,6 @@ a {
 a:hover {
   color: rgba(0, 0, 0, 0.1);
 }
-a:visited {
-  color: rgba(0, 0, 0, 0.3);
-}
 a:focus {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -42,6 +39,7 @@ Les composants
   flex-direction: row;
   justify-content: flex-end;
   gap: 0px 6px;
+  font-family: "Sour Gummy", sans-serif;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -60,13 +58,13 @@ Les composants
 Le composant .carte
 ********************** */
 .carte {
-  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 220px;
 }
 .carte--grande {
   padding: 40px;
+  margin: 10px;
 }
 .carte--petite {
   padding: 20px;
@@ -107,9 +105,15 @@ Le composant .carte
   background-color: peachpuff; /* Couleur pour les cartes impaires */
   color: cornflowerblue;
 }
+.carte:nth-child(odd) a {
+  color: cornflowerblue;
+}
 .carte:nth-child(even) {
   background-color: cornflowerblue; /* Couleur pour les cartes paires */
   color: peachpuff; /* Ajustement du texte si nécessaire */
+}
+.carte:nth-child(even) a {
+  color: peachpuff;
 }
 
 .recherche {
@@ -137,16 +141,34 @@ Le composant .carte
 /* /////////////////////////
 Layout 
 /////////////////////////// */
+body {
+  background-color: rgb(1, 115, 208);
+}
+
 .global {
   margin: 5%;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.populaire {
+  font-family: "Sour Gummy", sans-serif;
 }
 
 .boiteflex {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+#menu-principal li {
+  border: 1px solid rgba(255, 255, 255, 0.603);
+  padding: 0 0.6rem;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 15%;
+  background-color: rgb(21, 97, 159);
 }
 
 .hero {
@@ -167,15 +189,25 @@ Layout
 .hero__icone-app {
   margin-top: 5px;
 }
-.hero button {
-  display: flex;
-  background-color: rgba(0, 229, 255, 0.527);
+.hero__bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 115, 208, 0.66);
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
+  font-size: inherit;
+  color: #f3d41c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero__bouton:hover {
+  background-color: rgba(0, 229, 255, 0.7);
 }
 .hero button, .hero a, .hero p {
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .inscription {
@@ -270,6 +302,13 @@ Layout
   justify-content: space-between;
   align-items: center;
 }
+.entete a {
+  color: #f3d41c;
+  transition: color 0.3s ease;
+}
+.entete a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
 .entete__nav {
   display: flex;
   justify-content: space-between;
@@ -296,21 +335,51 @@ Layout
   max-width: 150px;
   height: auto;
 }
+.entete__recherche #s {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Sour Gummy", sans-serif;
+  color: #f3d41c;
+  border: none;
+  outline: none;
+}
+.entete__recherche #searchsubmit {
+  background-color: rgb(21, 97, 159);
+  font-family: "Sour Gummy", sans-serif;
+  color: #f3d41c;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  padding: 2px 0.6rem;
+  border-radius: 15%;
+}
 
 /*
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(236, 136, 13);
-  color: #000;
-  background-image: url("images/ciel.jpg");
+  color: peachpuff;
 }
 
 .piedpage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.603);
+  padding: 2.1rem 1rem;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 15%;
+  background-color: rgb(21, 97, 159);
+}
+.piedpage__courriel, .piedpage__adresse {
+  color: peachpuff;
+}
+.piedpage a {
+  color: peachpuff;
+  transition: color 0.3s ease;
+}
+.piedpage a:hover {
+  color: rgba(0, 0, 0, 0.3);
 }
 .piedpage__s1 {
   display: flex;
@@ -341,4 +410,8 @@ footer {
 .piedpage__s1__guide {
   text-decoration: underline;
   text-decoration-color: blanchedalmond;
+}
+.piedpage__h2 {
+  font-family: "Sour Gummy", sans-serif;
+  color: #f3d41c;
 }/*# sourceMappingURL=style.css.map */

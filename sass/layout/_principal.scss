@@ -1,13 +1,30 @@
-
+body {
+    background-color: rgb(1 115 208);
+}
 .global {
     margin: 5%;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif;
+}
+.populaire {
+    font-family: "Sour Gummy", sans-serif;
 }
 .boiteflex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  #menu-principal {
+    li {
+        border: 1px solid rgba(255, 255, 255, 0.603);
+        padding: 0 .6rem;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 15%;
+        background-color: rgb(21, 97, 159);
+    }
   }
 
 .hero{
@@ -29,18 +46,27 @@
         margin-top: 5px;
     }
     
-    
-    
-    button{
-    display: flex;
-    background-color: rgba(0, 229, 255, 0.527);
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
+    &__bouton {
+        display: inline-flex; // Utilisez inline-flex pour que le bouton s'adapte à la taille du texte
+        align-items: center; // Centrer le contenu verticalement
+        justify-content: center; // Centrer le contenu horizontalement
+        background-color: rgb(1 115 208 / 66%);
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: inherit; // Utilisez la même taille de police que le texte environnant
+        color: #f3d41c; // Couleur du texte
+        text-decoration: none; // Supprimez la décoration du texte pour les liens
+        cursor: pointer;
+    }
+
+    &__bouton:hover {
+        background-color: rgba(0, 229, 255, 0.7); // Changez la couleur de fond au survol
     }
 
     button, a, p{
         margin-top: 2%;
+        margin-bottom: 2%;
     }
 }
 
@@ -103,7 +129,7 @@
         object-fit: cover; 
     }
 }
- 
+
 
 
 

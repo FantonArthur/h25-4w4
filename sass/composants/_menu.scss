@@ -5,6 +5,7 @@
       flex-direction: row;
       justify-content: flex-end;
       gap: 0px 6px;
+      font-family: "Sour Gummy", sans-serif;
       @media screen and (max-width:$point__rupture) {
         flex-direction: column;
         gap: 6px 0px;
@@ -14,7 +15,6 @@
       padding: 0;
       list-style-type: none;
         &__li {
-          
         }
         &__a {
             padding : 2px 5px;

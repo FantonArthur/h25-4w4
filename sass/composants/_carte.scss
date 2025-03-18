@@ -3,13 +3,14 @@ Le composant .carte
 ********************** */
 
 .carte {
-  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 220px;
 
+
   &--grande {
     padding: 40px;
+     margin: 10px;
   }
 
   &--petite {
@@ -29,6 +30,8 @@ Le composant .carte
     font-size: 24px;
     color: #333;
   }
+
+
 
   &__description {
     font-size: 16px;
@@ -58,11 +61,17 @@ Le composant .carte
   &:nth-child(odd) {
     background-color: peachpuff; /* Couleur pour les cartes impaires */
     color: cornflowerblue;
+    a {
+      color: cornflowerblue;
+    }
   }
   
   &:nth-child(even) {
     background-color: cornflowerblue; /* Couleur pour les cartes paires */
     color: peachpuff; /* Ajustement du texte si nécessaire */
+    a {
+      color: peachpuff;
+    }
   }
   
 }
