@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 - Arthur Fanton
+Theme Name: 4W4 - Constantin Schmouker
 Theme URI: https://referenced.ca
-Author: Arthur Fanton
+Author: Constantin Schmouker
 Author URI: 
 Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
@@ -10,7 +10,7 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-arthur
+Text Domain: 4w4-constant
 */
 /* /////////////////////
 Les Variables
@@ -174,6 +174,13 @@ body {
 .populaire__nom {
   font-size: 4rem;
   color: #f3d41c;
+}
+
+.error-404 {
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  color: #f3d41c;
+  font-size: 3rem;
 }
 
 .boiteflex {

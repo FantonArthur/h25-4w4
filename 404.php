@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <section class="error-404 not-found">
+  <h1>Error404.php</h1>
     <header class="page-header">
         <h1 class="page-title">Page non trouvée</h1>
     </header><!-- .page-header -->
