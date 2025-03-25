@@ -36,6 +36,26 @@ body {
     color: #f3d41c;
     font-size: 3rem;
 }
+.page-content {
+    #s {
+        font-size: 2rem;
+        background-color: rgba(0,0,0,.1);
+        font-family: "Sour Gummy", sans-serif;
+        color: #f3d41c;
+        border : none;
+    }
+    #searchsubmit {
+            font-size: 2rem;
+            background-color: rgb(21, 97, 159);
+            font-family: "Sour Gummy", sans-serif;
+            color: #f3d41c;
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
+            padding: 2px .6rem;
+            border-radius: 15%;
+    }
+}
 .boiteflex {
     display: flex;
     flex-wrap: wrap;
