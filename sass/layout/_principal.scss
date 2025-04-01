@@ -37,11 +37,15 @@ body {
     font-size: 2.5rem;
     width: 100%;
     .page-title {
-        font-size: 4rem;
+        font-size: calc(2rem + 2vw);
+        text-align: center;
     }
     .page-title, p {
         margin: 0 auto;
         background-color: rgba(255,255,255,.2);
+    }
+    p {
+        font-size: calc(1rem + 1vw);
     }
 }
 
@@ -76,39 +80,50 @@ body {
     }
 
     #s {
-        font-size: 2rem;
-        background-color: rgba(0,0,0,.1);
+        font-size: calc(1rem + 0.5vw); 
+        background-color: rgba(0, 0, 0, 0.1);
         font-family: "Sour Gummy", sans-serif;
         color: #f3d41c;
-        border : none;
+        border: none;
+        padding: calc(8px + 0.5vw); 
+        border-radius: 10px;
+        width: 100%; 
+        max-width: 400px; 
+        margin: 0 auto; 
+        display: block;
     }
     #searchsubmit {
-            font-size: 2rem;
-            background-color: rgb(21, 97, 159);
-            font-family: "Sour Gummy", sans-serif;
-            color: #f3d41c;
-            border: 1px solid white;
-            border-top: none;
-            border-bottom: none;
-            padding: 2px .6rem;
-            border-radius: 15%;
+        font-size: calc(1rem + 0.5vw); 
+        background-color: rgb(21, 97, 159);
+        font-family: "Sour Gummy", sans-serif;
+        color: #f3d41c;
+        border: 1px solid white;
+        border-top: none;
+        border-bottom: none;
+        padding: calc(8px + 0.5vw) calc(16px + 1vw); 
+        border-radius: 15%;
+        margin-top: 10px; 
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.5s ease, color 0.5s ease;
+
+        &:hover {
+            background-color: #f3d41c;
+            color: #007BFF;
+        }
     }
 
     .btn-retour {
-        font-size: 1.5rem;
+        font-size: calc(1rem + 0.5vw);
         text-align: center;
         color: #007BFF;
-        margin: 2% auto; // Ajoute une marge autour du bouton et le centre horizontalement
-        margin-top: 20px; // Ajoute un espace spécifique au-dessus du bouton
-        padding: 10px 20px; // Ajuste l'espacement interne
+        margin: 2% auto; 
+        padding: calc(8px + 0.5vw) calc(16px + 1vw); 
         background-color: #f3d41c;
         border-radius: 10px;
-        display: inline-block; // Assure que le bouton reste en ligne
+        display: inline-block; 
         text-decoration: none;
-        transition: background-color .5s ease, color 0.5s ease;
-        a {
-            text-decoration: none;
-        }
+        transition: background-color 0.5s ease, color 0.5s ease;
 
         &:hover {
             background-color: #007BFF;
@@ -153,21 +168,21 @@ body {
     }
     
     &__bouton {
-        display: inline-flex; // Utilisez inline-flex pour que le bouton s'adapte à la taille du texte
-        align-items: center; // Centrer le contenu verticalement
-        justify-content: center; // Centrer le contenu horizontalement
+        display: inline-flex;
+        align-items: center; 
+        justify-content: center; 
         background-color: rgb(1 115 208 / 66%);
         border: none;
         border-radius: 10px;
         padding: 10px 20px;
-        font-size: inherit; // Utilisez la même taille de police que le texte environnant
-        color: #f3d41c; // Couleur du texte
-        text-decoration: none; // Supprimez la décoration du texte pour les liens
+        font-size: inherit; 
+        color: #f3d41c;
+        text-decoration: none; 
         cursor: pointer;
     }
 
     &__bouton:hover {
-        background-color: rgba(0, 229, 255, 0.7); // Changez la couleur de fond au survol
+        background-color: rgba(0, 229, 255, 0.7);
     }
 
     button, a, p{

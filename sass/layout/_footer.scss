@@ -24,7 +24,7 @@ footer {
         }
         a {
             color: peachpuff;
-            transition: color 0.3s ease; // Transition fluide de la couleur du texte
+            transition: color 0.3s ease; 
         }
         a:hover {
             color: rgba(0,0,0,0.3);
@@ -34,9 +34,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 1200px; // Définir une largeur maximale pour la boîte
-        width: 100%; // S'assurer que la boîte prend toute la largeur disponible
-        margin: 0 auto; // Centrer la boîte horizontalement
+        max-width: 1200px; 
+        width: 100%; 
+        margin: 0 auto; 
 
         &__compagnies {
             display: flex;
@@ -83,8 +83,8 @@ footer {
         }
 
         &__description {
-            max-width: 200px; // Définir une largeur maximale pour le texte
-            text-align: center; // Centrer le texte
+            max-width: 200px; 
+            text-align: center; 
         }
 
         &__guide {
