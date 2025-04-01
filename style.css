@@ -180,9 +180,32 @@ body {
   font-family: "Sour Gummy", sans-serif;
   text-align: center;
   color: #f3d41c;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+.error-404 .page-title, .error-404 p {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+.page-content #menu-erreur_404 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  gap: 20px;
+  margin: 2%;
+  padding: 2%;
+}
+.page-content #menu-erreur_404 li {
+  list-style-type: none;
+  background-color: #f3d41c;
+  padding: 10px;
+  border-radius: 10px;
+}
+.page-content #menu-erreur_404 li a {
+  color: #0173d0;
+  text-decoration: none;
+}
 .page-content #s {
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.1);

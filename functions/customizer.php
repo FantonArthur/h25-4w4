@@ -124,6 +124,17 @@ function theme_31w_customize_register($wp_customize) {
     'section' => 'error_404_section',
     'type' => 'text',
   ));
+
+    // Erreur 404 image background
+    $wp_customize->add_setting('erreur_image', array(
+      'default' => '',
+      'sanitize_callback' => 'esc_url_raw',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur_image', array(
+      'label' => __('Image en Background', 'theme_31w'),
+      'section' => 'error_404_section',
+    )));
 }
 
 add_action('customize_register', 'theme_31w_customize_register');

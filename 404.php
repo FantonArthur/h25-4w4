@@ -9,6 +9,12 @@
     </header>
     <div class="page-content">
         <p><?php echo $erreur_explication; ?></p>
+        <!-- Bouton retour a l'accueil -->
+        <?php wp_nav_menu(array(
+                            'menu' => 'Erreur_404',
+                            'container' => 'nav',
+                            'container_class' => 'menu__404',
+                )); ?>
         <?php get_search_form(); ?>
     </div>
 </section>
