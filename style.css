@@ -183,9 +183,11 @@ body {
   font-size: 2.5rem;
   width: 100%;
 }
-
-.page-title, p {
-  margin: 1 auto;
+.error-404 .page-title {
+  font-size: 4rem;
+}
+.error-404 .page-title, .error-404 p {
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -203,10 +205,18 @@ body {
   background-color: #f3d41c;
   padding: 10px;
   border-radius: 10px;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  color: #007BFF;
 }
 .page-content #menu-erreur_404 li a {
   color: #0173d0;
   text-decoration: none;
+}
+.page-content #menu-erreur_404 li a:hover {
+  color: #f3d41c;
+}
+.page-content #menu-erreur_404 li:hover {
+  background-color: #007BFF;
 }
 .page-content #s {
   font-size: 2rem;
@@ -225,6 +235,26 @@ body {
   border-bottom: none;
   padding: 2px 0.6rem;
   border-radius: 15%;
+}
+.page-content .btn-retour {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #007BFF;
+  margin: 2% auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f3d41c;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.page-content .btn-retour a {
+  text-decoration: none;
+}
+.page-content .btn-retour:hover {
+  background-color: #007BFF;
+  color: #f3d41c;
 }
 
 .boiteflex {

@@ -10,7 +10,7 @@
     </header>
     <div class="page-content" >
         <p><?php echo $erreur_explication; ?></p>
-        <!-- Bouton retour a l'accueil -->
+        <a href="<?= esc_url(home_url('/')); ?>" class="btn-retour">Retour à l'accueil</a>
         <?php wp_nav_menu(array(
                             'menu' => 'Erreur_404',
                             'container' => 'nav',

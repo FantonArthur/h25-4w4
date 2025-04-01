@@ -36,11 +36,15 @@ body {
     color: #f3d41c;
     font-size: 2.5rem;
     width: 100%;
+    .page-title {
+        font-size: 4rem;
+    }
+    .page-title, p {
+        margin: 0 auto;
+        background-color: rgba(255,255,255,.2);
+    }
 }
-.page-title, p {
-    margin: 1 auto;
-    background-color: rgba(255,255,255,.2);
-}
+
 
 .page-content {
     #menu-erreur_404 {
@@ -56,12 +60,21 @@ body {
             background-color: #f3d41c;
             padding: 10px;
             border-radius: 10px;
+            transition: color .5s ease, background-color .5s ease;
+            color: #007BFF;
             a {
                 color: #0173d0;
                 text-decoration: none;
+                &:hover {
+                    color: #f3d41c;
+                }
+            }
+            &:hover {
+                background-color: #007BFF;
             }
         }
     }
+
     #s {
         font-size: 2rem;
         background-color: rgba(0,0,0,.1);
@@ -79,6 +92,28 @@ body {
             border-bottom: none;
             padding: 2px .6rem;
             border-radius: 15%;
+    }
+
+    .btn-retour {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #007BFF;
+        margin: 2% auto; // Ajoute une marge autour du bouton et le centre horizontalement
+        margin-top: 20px; // Ajoute un espace spécifique au-dessus du bouton
+        padding: 10px 20px; // Ajuste l'espacement interne
+        background-color: #f3d41c;
+        border-radius: 10px;
+        display: inline-block; // Assure que le bouton reste en ligne
+        text-decoration: none;
+        transition: background-color .5s ease, color 0.5s ease;
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #007BFF;
+            color: #f3d41c;
+        }
     }
 }
 .boiteflex {
