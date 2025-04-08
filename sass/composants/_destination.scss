@@ -1,0 +1,36 @@
+.destination {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    div {
+      position: relative;
+
+      h3 {
+        font-family: "Sour Gummy", sans-serif;
+        font-size: calc(1rem + 0.2vw);
+        color: #f3d41c;
+        text-align: center;
+        cursor: pointer; // Indique que le titre est cliquable
+      }
+
+      p {
+        font-size: calc(0.9rem + 0.2vw);
+        color: #333;
+        margin-top: 10px;
+        text-align: justify;
+        display: none; // Masque le paragraphe par défaut
+      }
+
+      input[type="checkbox"]:checked + label + p {
+        display: block; // Affiche le paragraphe lorsque le checkbox est coché
+      }
+    }
+  }
+}

@@ -138,6 +138,64 @@ Le composant .carte
   padding: 0 3px;
 }
 
+.categorie__ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+.categorie__ul li {
+  border: 1px solid #f3d41c;
+  background-color: rgb(21, 97, 159);
+  color: #f3d41c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Sour Gummy", sans-serif;
+  font-size: calc(1rem + 0.2vw);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.categorie__ul li:hover {
+  background-color: #f3d41c;
+  color: rgb(21, 97, 159);
+}
+.categorie__ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.destination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.destination__list div {
+  position: relative;
+}
+.destination__list div h3 {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: calc(1rem + 0.2vw);
+  color: #f3d41c;
+  text-align: center;
+  cursor: pointer;
+}
+.destination__list div p {
+  font-size: calc(0.9rem + 0.2vw);
+  color: #333;
+  margin-top: 10px;
+  text-align: justify;
+  display: none;
+}
+.destination__list div input[type=checkbox]:checked + label + p {
+  display: block;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
