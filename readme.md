@@ -1,7 +1,7 @@
-# Exercice 1 
+# TP2
 ## Cours: 4w4-Conception d'interface et développement web 
 
-Créer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de la maquette.
+Créer une page d'accueil en utilisant Rest-API afin de rendre le mouvement sur la page simple.
 Auteur: Arthur Fanton
 
 ### Page github: https://github.com/FantonArthur/h25-4w4.git 
