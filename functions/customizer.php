@@ -34,15 +34,17 @@ function theme_31w_customize_register($wp_customize) {
   ));
 
   // Background Image
-  $wp_customize->add_setting('hero_background', array(
-    'default' => '',
-    'sanitize_callback' => 'esc_url_raw',
-  ));
+  for( $i = 1; $i <= 3; $i++) {
+    $wp_customize->add_setting('hero_background' . $i, array(
+      'default' => '',
+      'sanitize_callback' => 'esc_url_raw',
+    ));
 
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
-    'label' => __('Image en Background', 'theme_31w'),
-    'section' => 'hero_section',
-  )));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background' . $i, array(
+      'label' => __('Image en Background' . $i, 'theme_31w'),
+      'section' => 'hero_section',
+    )));
+  }
 
   // Couleur
   $wp_customize->add_setting('hero_couleur', array(

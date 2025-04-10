@@ -2,34 +2,125 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 60%;
 
     div {
-      position: relative;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff; // Fond blanc par défaut
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Ombre légère pour un effet de profondeur
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px); // Légère élévation au survol
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); // Ombre plus prononcée au survol
+      }
+
+      // Styles pour les blocs impairs
+      &:nth-child(odd) {
+        background-color: peachpuff; // Couleur pour les blocs impairs
+        color: cornflowerblue;
+
+        .article-content {
+          background-color: cornflowerblue; // Fond bleu pour les blocs impairs
+          color: peachpuff;
+
+          a, p {
+            color: peachpuff;
+          }
+        }
+
+        h3 {
+          color: cornflowerblue; // Couleur du texte pour les blocs impairs
+        }
+      }
+
+      // Styles pour les blocs pairs
+      &:nth-child(even) {
+        background-color: cornflowerblue; // Couleur pour les blocs pairs
+        color: peachpuff;
+
+        .article-content {
+          background-color: peachpuff; // Fond pêche pour les blocs pairs
+          color: cornflowerblue;
+
+          a, p {
+            color: cornflowerblue;
+          }
+        }
+
+        h3 {
+          color: peachpuff; // Couleur du texte pour les blocs pairs
+        }
+      }
 
       h3 {
-        font-family: "Sour Gummy", sans-serif;
-        font-size: calc(1rem + 0.2vw);
-        color: #f3d41c;
+        font-size: 24px;
+        font-family: 'Sour Gummy', sans-serif;
+        margin-bottom: 1rem;
         text-align: center;
+        font-weight: bold;
         cursor: pointer; // Indique que le titre est cliquable
       }
 
       p {
-        font-size: calc(0.9rem + 0.2vw);
-        color: #333;
+        font-size: 16px;
+        color: #666;
         margin-top: 10px;
         text-align: justify;
-        display: none; // Masque le paragraphe par défaut
       }
 
-      input[type="checkbox"]:checked + label + p {
-        display: block; // Affiche le paragraphe lorsque le checkbox est coché
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #1d13cf;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: #1890d6;
+        }
+      }
+
+      input[type="radio"] {
+        display: none; // Masque les boutons radio
+      }
+
+      input[type="radio"]:checked + label + .article-content {
+        display: block; // Affiche la div contenant le contenu lorsque le bouton radio est sélectionné
+      }
+
+      label {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #1d13cf; // Change la couleur au survol
+        }
+      }
+
+      .article-content {
+        display: none; // Masque le contenu par défaut
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
     }
   }

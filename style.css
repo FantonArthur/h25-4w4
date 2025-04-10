@@ -168,32 +168,153 @@ Le composant .carte
 
 .destination__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 60%;
 }
 .destination__list div {
-  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destination__list div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.destination__list div:nth-child(odd) {
+  background-color: peachpuff;
+  color: cornflowerblue;
+}
+.destination__list div:nth-child(odd) .article-content {
+  background-color: cornflowerblue;
+  color: peachpuff;
+}
+.destination__list div:nth-child(odd) .article-content a, .destination__list div:nth-child(odd) .article-content p {
+  color: peachpuff;
+}
+.destination__list div:nth-child(odd) h3 {
+  color: cornflowerblue;
+}
+.destination__list div:nth-child(even) {
+  background-color: cornflowerblue;
+  color: peachpuff;
+}
+.destination__list div:nth-child(even) .article-content {
+  background-color: peachpuff;
+  color: cornflowerblue;
+}
+.destination__list div:nth-child(even) .article-content a, .destination__list div:nth-child(even) .article-content p {
+  color: cornflowerblue;
+}
+.destination__list div:nth-child(even) h3 {
+  color: peachpuff;
 }
 .destination__list div h3 {
+  font-size: 24px;
   font-family: "Sour Gummy", sans-serif;
-  font-size: calc(1rem + 0.2vw);
-  color: #f3d41c;
+  margin-bottom: 1rem;
   text-align: center;
+  font-weight: bold;
   cursor: pointer;
 }
 .destination__list div p {
-  font-size: calc(0.9rem + 0.2vw);
-  color: #333;
+  font-size: 16px;
+  color: #666;
   margin-top: 10px;
   text-align: justify;
+}
+.destination__list div a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1d13cf;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.destination__list div a:hover {
+  background-color: #1890d6;
+}
+.destination__list div input[type=radio] {
   display: none;
 }
-.destination__list div input[type=checkbox]:checked + label + p {
+.destination__list div input[type=radio]:checked + label + .article-content {
   display: block;
+}
+.destination__list div label {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.destination__list div label:hover {
+  color: #1d13cf;
+}
+.destination__list div .article-content {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero__contenu {
+  z-index: 10;
+}
+.hero__titre {
+  font-size: 5rem;
+  text-shadow: 3px -3px 3px rgb(255, 188, 15);
+  color: #f3d41c;
+}
+.hero__description {
+  font-size: 2rem;
+  color: #f3d41c;
+}
+.hero__icone-app {
+  margin-top: 5px;
+}
+.hero__bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 115, 208, 0.66);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: inherit;
+  color: #f3d41c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero__bouton:hover {
+  background-color: rgba(0, 229, 255, 0.7);
+}
+.hero button, .hero a, .hero p {
+  margin-bottom: 2%;
+}
+.hero__carrousel {
+  position: absolute;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* /////////////////////////
@@ -342,44 +463,6 @@ body {
   border-bottom: none;
   border-radius: 15%;
   background-color: rgb(21, 97, 159);
-}
-
-.hero {
-  min-height: 100vh;
-  background-image: url("images/maldives.jpg");
-  display: flex;
-  flex-direction: column;
-}
-.hero__titre {
-  font-size: 5rem;
-  text-shadow: 3px -3px 3px rgb(255, 188, 15);
-  color: #f3d41c;
-}
-.hero__description {
-  font-size: 2rem;
-  color: #f3d41c;
-}
-.hero__icone-app {
-  margin-top: 5px;
-}
-.hero__bouton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(1, 115, 208, 0.66);
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: inherit;
-  color: #f3d41c;
-  text-decoration: none;
-  cursor: pointer;
-}
-.hero__bouton:hover {
-  background-color: rgba(0, 229, 255, 0.7);
-}
-.hero button, .hero a, .hero p {
-  margin-bottom: 2%;
 }
 
 .inscription {

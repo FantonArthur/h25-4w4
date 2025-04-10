@@ -148,48 +148,7 @@ body {
     }
   }
 
-.hero{
-    min-height: 100vh;
-    background-image: url("images/maldives.jpg");
-    display: flex;
-    flex-direction: column;
 
-    &__titre {
-        font-size: 5rem;
-        text-shadow: 3px -3px 3px rgb(255 188 15);
-        color: #f3d41c;
-    }
-    &__description {
-        font-size: 2rem;
-        color: #f3d41c;
-    }
-    &__icone-app {
-        margin-top: 5px;
-    }
-    
-    &__bouton {
-        display: inline-flex;
-        align-items: center; 
-        justify-content: center; 
-        background-color: rgb(1 115 208 / 66%);
-        border: none;
-        border-radius: 10px;
-        padding: 10px 20px;
-        font-size: inherit; 
-        color: #f3d41c;
-        text-decoration: none; 
-        cursor: pointer;
-    }
-
-    &__bouton:hover {
-        background-color: rgba(0, 229, 255, 0.7);
-    }
-
-    button, a, p{
-        // margin-top: 2%;
-        margin-bottom: 2%;
-    }
-}
 
 .inscription {
     position: absolute;
