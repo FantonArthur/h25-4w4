@@ -1,42 +1,57 @@
 <?php 
-    // Récupération des images de fond depuis le customizer
-    $hero_bg = array();
-    for ($i = 1; $i <= 3; $i++) {
-        $hero_bg[$i] = get_theme_mod('hero_background' . $i, '');
-    }
+$hero_auteur = get_theme_mod('hero_auteur', ''); 
 
-    // Récupération des autres paramètres du customizer
-    $hero_auteur = get_theme_mod('hero_auteur', 'Arthur Fanton');
-    $hero_courriel = get_theme_mod('hero_courriel', 'info@cmaisonneuve.qc.ca');
-    $couleur = get_theme_mod('hero_couleur', '#fff');
+// Récupérer les images de fond pour le carrousel
+$hero_bg = array();
+for ($i = 1; $i <= 3; $i++) {
+    $hero_bg[$i] = get_theme_mod('hero_background' . $i, get_template_directory_uri() . '/images/default-hero-' . $i . '.jpg');
+}
+
+$couleur = get_theme_mod('hero_couleur', '#fff');
+$hero_email = get_theme_mod('hero_email', 'info@cmaisonneuve.qc.ca');
 ?>
+
 <style>
-  .hero_couleur {
-    color: <?php echo esc_attr($couleur); ?>;
-  }
+    .hero__couleur {
+        color: <?php echo $couleur ?>;
+    }
 </style>
 
-<section class="hero" style="background-repeat: no-repeat;">
-    <?php foreach ($hero_bg as $bg): ?>
-        <?php if (!empty($bg)): ?>
-            <div class="hero__carrousel" style="background-image: url('<?php echo esc_url($bg); ?>');"></div>
-        <?php endif; ?>
-    <?php endforeach; ?>
-
+<section class="hero">
+    <!-- Contenu texte -->
     <div class="hero__contenu global">
-        <h1 class="hero__titre hero_couleur">
+        <h1 class="hero__titre hero__couleur">
             <?php bloginfo('name'); ?>
         </h1>
         <p class="hero__description">
             <?php bloginfo('description'); ?>
+            Découvrez notre <span class="souligne c1">club de voyage</span> et explorez des destinations uniques à travers le monde. Rejoignez-nous pour vivre des expériences inoubliables et partager votre passion du voyage !
         </p>
-        <a href="mailto:<?php echo esc_attr($hero_courriel); ?>" class="hero__courriel hero_couleur">
-            <p><?php echo esc_html($hero_courriel); ?></p>
+        <a href="mailto:<?php echo esc_attr($hero_email); ?>" class="hero__courriel">
+            <?php echo esc_html($hero_email); ?>
         </a>
-        <a class="hero__bouton" href="#">Inscription</a>
-        <?php get_template_part("gabarit/icone_sociaux"); ?>
-        <p class="hero__auteur hero_couleur">
-            Auteur: <?php echo esc_html($hero_auteur); ?>
-        </p>
+        <button class="hero__bouton">Inscription</button>
+        <div class="hero__icone-app">
+            <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=f3d41c" width="20" height="20">
+            <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=f3d41c" width="20" height="20">
+            <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=f3d41c" width="20" height="20">
+            <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=f3d41c" width="20" height="20">
+        </div>
+        <p class="hero__auteur">Auteur : <?php echo esc_html($hero_auteur); ?></p>
+    </div>
+
+    <!-- Carrousel d'images de fond -->
+    <div class="hero__carrousel" style="background-image: url('<?php echo esc_url($hero_bg[1]); ?>');"></div>
+    <div class="hero__carrousel" style="background-image: url('<?php echo esc_url($hero_bg[2]); ?>');"></div>
+    <div class="hero__carrousel" style="background-image: url('<?php echo esc_url($hero_bg[3]); ?>');"></div>
+
+
+
+
+    <!-- Radio boutons pour changer de slide -->
+    <div class="hero__radio">
+        <input class="hero__radio__input" data-id_radio="0" type="radio" name="carroussel" checked="checked">
+        <input class="hero__radio__input" data-id_radio="1" type="radio" name="carroussel">
+        <input class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel">
     </div>
 </section>
