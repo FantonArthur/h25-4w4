@@ -1,10 +1,13 @@
-<footer>
+
     <?php $footer_mission = get_theme_mod('footer_mission', ''); 
     $footer_adresse = get_theme_mod('footer_adresse', '');
     $footer_telephone = get_theme_mod('footer_telephone', '');
+    $footer_couleur_arriere = get_theme_mod('footer_couleur_arriere', '');
+
+    vague($footer_couleur_arriere);
     ?>
 
-
+<footer style="background-color: <?= $footer_couleur_arriere ?> ">
     <div class="piedpage global">
         <section class="piedpage__s1">
             <div class="piedpage__s1__compagnies"> 

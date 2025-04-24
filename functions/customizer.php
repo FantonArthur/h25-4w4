@@ -97,6 +97,16 @@ function theme_31w_customize_register($wp_customize) {
     'type' => 'text',
   ));
 
+  // Couleur de fond
+  $wp_customize->add_setting('footer_couleur_arriere', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur_arriere', array(
+    'label' => __('Couleur de fond', 'theme_31w'),
+    'section' => 'footer_section',
+  )));
+
   // Erreur 404
   $wp_customize->add_section('error_404_section', array(
     'title' => __('Erreur 404', 'theme_31w'),
