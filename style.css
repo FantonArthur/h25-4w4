@@ -701,4 +701,22 @@ footer {
 .piedpage__h2 {
   font-family: "Sour Gummy", sans-serif;
   color: #f3d41c;
+}
+
+.hero__titre, .hero__description {
+  position: relative;
+  animation: anim_contenu 2s cubic-bezier(0.91, -0.59, 0.19, 1.59) forwards;
+}
+.hero__titre {
+  transform: translateY(-1000px);
+}
+.hero__description {
+  transform: translateX(-1500px);
+  animation-delay: 2s;
+}
+
+@keyframes anim_contenu {
+  100% {
+    transform: translate(0, 0);
+  }
 }/*# sourceMappingURL=style.css.map */

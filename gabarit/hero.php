@@ -20,13 +20,14 @@ $hero_email = get_theme_mod('hero_email', 'info@cmaisonneuve.qc.ca');
 <section class="hero">
     <!-- Contenu texte -->
     <div class="hero__contenu global">
-        <h1 class="hero__titre hero__couleur">
-            <?php bloginfo('name'); ?>
-        </h1>
-        <p class="hero__description">
-            <?php bloginfo('description'); ?>
-            Découvrez notre <span class="souligne c1">club de voyage</span> et explorez des destinations uniques à travers le monde. Rejoignez-nous pour vivre des expériences inoubliables et partager votre passion du voyage !
-        </p>
+    <div class="hero__animation">
+             <h1 class="hero__titre">
+                 <?php  bloginfo('name'); ?>
+             </h1>
+             <p class="hero__description">
+             <?php  bloginfo('description'); ?>
+             </p>
+         </div>
         <a href="mailto:<?php echo esc_attr($hero_email); ?>" class="hero__courriel">
             <?php echo esc_html($hero_email); ?>
         </a>
