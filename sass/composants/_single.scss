@@ -1,0 +1,116 @@
+.single {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: #f7fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(21, 97, 159, 0.08);
+
+  .populaire__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7fafc;
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(21, 97, 159, 0.06);
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(21, 97, 159, 0.07);
+    }
+
+    .populaire__nom {
+      font-family: "Sour Gummy", sans-serif;
+      font-size: 2.2rem;
+      color: rgb(21, 97, 159);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .populaire__contenu {
+      font-size: 1.15rem;
+      color: #222;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .temp_min,
+    .temp_max,
+    .temp_moy {
+      font-size: 1rem;
+      color: #15619f;
+      background: #f3d41c22;
+      border-radius: 6px;
+      padding: 0.4em 1em;
+      margin: 0.2em 0;
+      display: inline-block;
+    }
+  }
+
+  .carte__bouton {
+    display: inline-block;
+    border: 1.5px solid #f3d41c;
+    background-color: rgb(21, 97, 159);
+    color: #f3d41c;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.5em 0.5em 1.5em 0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: #f3d41c;
+      color: rgb(21, 97, 159);
+      border-color: rgb(21, 97, 159);
+      outline: none;
+    }
+
+    &--categorie {
+      font-size: 1rem;
+      padding: 8px 18px;
+      margin-top: 0.5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hero__auteur {
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    color: #888;
+    text-align: right;
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .single {
+    padding: 1rem 0.5rem;
+
+    .populaire__article {
+      padding: 1rem 0.5rem;
+    }
+    .carte__bouton {
+      width: 100%;
+      padding: 12px 0;
+      font-size: 1rem;
+    }
+  }
+}

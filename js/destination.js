@@ -7,6 +7,9 @@
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li");
     console.log("categorie__ul__li.length", categorie__ul__li.length);
 
+    // Retirer la catégorie "populaire" (data-id="3")
+    document.querySelectorAll('.categorie__ul__li[data-id="10"]').forEach(li => li.remove());
+
     categorie__ul__li.forEach(li => {
         li.addEventListener("click", function () {
             console.log(li.dataset.id);

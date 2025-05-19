@@ -198,6 +198,7 @@ Le composant .carte
 }
 .destination__list div:nth-child(odd) .article-content a, .destination__list div:nth-child(odd) .article-content p {
   color: peachpuff;
+  font-family: "Sour Gummy", sans-serif;
 }
 .destination__list div:nth-child(odd) h3 {
   color: cornflowerblue;
@@ -212,6 +213,7 @@ Le composant .carte
 }
 .destination__list div:nth-child(even) .article-content a, .destination__list div:nth-child(even) .article-content p {
   color: cornflowerblue;
+  font-family: "Sour Gummy", sans-serif;
 }
 .destination__list div:nth-child(even) h3 {
   color: peachpuff;
@@ -328,6 +330,109 @@ Le composant .carte
   width: 100%;
 }
 
+.single {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: #f7fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(21, 97, 159, 0.08);
+}
+.single .populaire__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7fafc;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(21, 97, 159, 0.06);
+}
+.single .populaire__article img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(21, 97, 159, 0.07);
+}
+.single .populaire__article .populaire__nom {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 2.2rem;
+  color: rgb(21, 97, 159);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.single .populaire__article .populaire__contenu {
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.single .populaire__article .temp_min,
+.single .populaire__article .temp_max,
+.single .populaire__article .temp_moy {
+  font-size: 1rem;
+  color: #15619f;
+  background: rgba(243, 212, 28, 0.1333333333);
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  margin: 0.2em 0;
+  display: inline-block;
+}
+.single .carte__bouton {
+  display: inline-block;
+  border: 1.5px solid #f3d41c;
+  background-color: rgb(21, 97, 159);
+  color: #f3d41c;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0.5em 0.5em 1.5em 0;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.single .carte__bouton:hover, .single .carte__bouton:focus {
+  background-color: #f3d41c;
+  color: rgb(21, 97, 159);
+  border-color: rgb(21, 97, 159);
+  outline: none;
+}
+.single .carte__bouton--categorie {
+  font-size: 1rem;
+  padding: 8px 18px;
+  margin-top: 0.5em;
+}
+.single .carte__bouton a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.single .hero__auteur {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  color: #888;
+  text-align: right;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  .single {
+    padding: 1rem 0.5rem;
+  }
+  .single .populaire__article {
+    padding: 1rem 0.5rem;
+  }
+  .single .carte__bouton {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
 /* /////////////////////////
 Layout 
 /////////////////////////// */
