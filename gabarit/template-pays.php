@@ -1,19 +1,23 @@
+<?php
+/*
+Template Name: Gabarit Pays
+*/
+?>
+
 <?php get_header(); ?>
 
 <?php $Pays_texte = get_theme_mod('Pays_texte', ''); ?>
 
 <section class="Pays">
-        <p><?php echo $Pays_texte; ?></p>
-  <div class="entete__nav" id="accueil">
-                <?php wp_nav_menu(array(
-                            'menu' => 'principal',
-                            'container' => 'nav',
-                            'container_class' => 'entete__menu',
-                )); ?>
-                <div class="entete__recherche">
-                    <?php get_search_form(); ?>
-                </div>
-            </div>
+    <h2 class="Pays__titre">Pays incontournables</h2>
+    <p><?php echo $Pays_texte; ?></p>
+    
+    <?php
+    // Affiche les sous-catégories de la catégorie "pays"
+    if (function_exists('categories_liste')) {
+        categories_liste('pays');
+    }
+    ?>
 </section>
 
 <?php get_footer(); ?>

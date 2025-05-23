@@ -1,5 +1,4 @@
 (function () {
-    console.log("vive Javascript");
 
     let categoryId = 3;
     const domaine = window.location.href;
@@ -35,7 +34,7 @@
 
                 data.forEach((article, index) => {
                     const articleElement = document.createElement('div');
-                    const uniqueId = `article-${index}`; // ID unique pour chaque bouton radio
+                    const uniqueId = `article-${index}`;
 
                     const radio = document.createElement('input');
                     radio.type = 'radio';
