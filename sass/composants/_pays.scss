@@ -20,6 +20,11 @@
 
   .entete__nav {
     margin-bottom: 2em;
+    display: flex;
+    justify-content: center; // Centre horizontalement le menu dans la page
+    align-items: center;
+    min-height: 80px; // Optionnel : ajuste la hauteur si besoin
+
     .Pays_menu {
       display: flex;
       justify-content: center;

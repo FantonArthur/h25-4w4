@@ -453,6 +453,10 @@ Le composant .carte
 }
 .Pays .entete__nav {
   margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
 }
 .Pays .entete__nav .Pays_menu {
   display: flex;
