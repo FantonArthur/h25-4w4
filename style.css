@@ -465,6 +465,10 @@ Le composant .carte
 }
 .Pays .entete__nav .Pays_menu li {
   list-style: none;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .Pays .entete__nav .Pays_menu li a {
   color: #f3d41c;
@@ -474,10 +478,11 @@ Le composant .carte
   background: #eaf2fb;
   transition: background 0.2s, color 0.2s;
   font-weight: 500;
-}
-.Pays .entete__nav .Pays_menu li a:hover, .Pays .entete__nav .Pays_menu li a.current-menu-item {
-  background: #358aea;
-  color: #fff;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .Pays .galerie {
   margin-bottom: 2em;

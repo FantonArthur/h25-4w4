@@ -21,19 +21,19 @@ Template Name: Gabarit Pays
         )); ?>
     </div>
 
-    <section class="galerie">
-        <div class="boiteflex global">
-          <section class="galerie">
-                        <?php if (in_category('galerie')){
-                the_content();
-            } ?>
-            <img src="" alt="">
-          </section>
-        </div>
-    </section>
-
     <div class="destination__list"></div>
     <?php vague('blue'); ?>
 </section>
+
+<?php
+$galerie = get_field('galerie'); // 'galerie' est le nom du champ ACF sur la page
+if ($galerie) {
+    echo '<section class="galerie"><div class="boiteflex global">';
+    foreach ($galerie as $image) {
+        echo '<img src="' . esc_url($image['sizes']['medium']) . '" alt="' . esc_attr($image['alt']) . '" style="margin:0 10px 10px 0;max-width:150px;max-height:150px;">';
+    }
+    echo '</div></section>';
+}
+?>
 
 <?php get_footer(); ?>
