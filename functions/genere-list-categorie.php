@@ -20,11 +20,6 @@ function categories_liste($parent_slug){
         foreach ($sous_categories as $categorie) {
             echo '<li data-id="' . esc_html($categorie->term_id) . '" class="categorie__ul__li">' . esc_html($categorie->name) . '</li>';
         }
-        // Ajoute le lien vers la page Pays
-        $pays_page = get_page_by_path('pays');
-        if ($pays_page) {
-            echo '<li class="categorie__ul__li"><a href="' . get_permalink($pays_page->ID) . '">Pays</a></li>';
-        }
         echo '</ul>';
     } 
     }    

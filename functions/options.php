@@ -54,4 +54,8 @@ function modifie_requete_principal( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'modifie_requete_principal' );
+
+if (is_page_template('gabarit/template-pays.php')) {
+    wp_enqueue_script('pays-js', get_template_directory_uri() . '/js/Pays.js', array(), false, true);
+}
 ?>
