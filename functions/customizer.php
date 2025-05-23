@@ -147,6 +147,23 @@ function theme_31w_customize_register($wp_customize) {
       'label' => __('Image en Background', 'theme_31w'),
       'section' => 'error_404_section',
     )));
+    // Page pays 
+    $wp_customize->add_section('Pays', array(
+    'title' => __('Pays', 'theme_31w'),
+    'priority' => 30,
+  ));
+
+  // Pays
+  $wp_customize->add_setting('Pays_texte', array(
+    'default' => __('Plongez au cœur de l’aventure et laissez-vous emporter par l’appel du large ! Notre planète regorge de destinations incroyables, chacune promettant une expérience unique et mémorable. Que vous rêviez de plages idylliques baignées de soleil, de sommets majestueux invitant à la randonnée, de villes vibrantes d’histoire et de modernité, ou de rencontres culturelles authentiques, il y a un pays fait pour vous.', 'theme_31w'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('Pays_texte', array(
+    'label' => __('Pays', 'theme_31w'),
+    'section' => 'Pays',
+    'type' => 'textarea',
+  ));
 }
 
 add_action('customize_register', 'theme_31w_customize_register');
