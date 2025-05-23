@@ -12,6 +12,7 @@ Template Name: Gabarit Pays
     <h2 class="Pays__titre">Pays incontournables</h2>
     <p><?php echo $Pays_texte; ?></p>
     <?php vague($footer_couleur_arriere); ?>
+    <?php the_content(); ?>
 
     <div class="entete__nav" id="accueil">
         <?php wp_nav_menu(array(
